@@ -41,7 +41,9 @@
 
 <br clear="both">
 
+<div align="center">
 <img align="right" height="160" src="https://i.ibb.co/6wQLR9V/Screenshot-5.png"  />
+</div>
 
 ###
 
