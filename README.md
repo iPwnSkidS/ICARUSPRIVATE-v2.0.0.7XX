@@ -9,7 +9,7 @@
 <br clear="both">
 
 <div align="center">
-  <img height="400" src="https://i.ibb.co/m9gTdL7/Screenshot-1.png"  />
+  <img height="500" src="https://i.ibb.co/m9gTdL7/Screenshot-1.png"  />
 </div>
 
 ###
@@ -42,7 +42,7 @@
 <br clear="both">
 
 <div align="center">
-<img align="right" height="160" src="https://i.ibb.co/6wQLR9V/Screenshot-5.png"  />
+  <img height="500" src="https://i.ibb.co/6wQLR9V/Screenshot-5.png"  />
 </div>
 
 ###
@@ -53,6 +53,12 @@
 <div align="center">
   <img height="500" src="https://i.ibb.co/VjdJc4J/Screenshot-6.png"  />
 </div>
+
+###
+
+<br clear="both">
+
+<img align="right" height="160" src="https://i.ibb.co/xFX5fTG/grimreaper.png"  />
 
 ###
 
